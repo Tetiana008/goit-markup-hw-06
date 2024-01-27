@@ -26,7 +26,8 @@ ul, ol {
 
 img {
     display: block;
-    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -123,10 +124,9 @@ align-items: center;
     position: fixed;
     top: 0;
     background-color: #FFF;
-    padding: 24px 16px;
+    padding: 72px 24px 40px 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     overflow: auto;
     opacity: 0;
     visibility: hidden;
@@ -145,9 +145,9 @@ align-items: center;
 }
 
 .mob-menu-list {
-    padding-left: 16px;
+    /* padding-left: 16px;
     padding-top: 88px;
-    margin-bottom: 168px;
+    margin-bottom: 168px; */
 }
 
 .mob-nav-link {
@@ -161,6 +161,10 @@ align-items: center;
 
 .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
+}
+
+.mob-contacts {
+    margin-top: auto;
 }
 
 .mob-address {
@@ -503,6 +507,10 @@ align-items: center;
     padding: 96px 0;
 }
 
+.team-cont {
+    width: 296px;
+}
+
 .team-player {
     background-color: #FFFFFF;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -589,6 +597,10 @@ align-items: center;
 }
 
 @media screen and (min-width: 768px) {
+    .team-cont {
+         width: 584px;
+    }
+
     .team-list {
         column-gap: 24px;
         row-gap: 64px;
@@ -596,11 +608,13 @@ align-items: center;
 
     .team-player {
         width: 264px;
-        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 1158px) {
+    .team-cont {
+            width: 1128px;
+        }
     .team-list {
         gap: 24px;
     }
