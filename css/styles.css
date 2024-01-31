@@ -612,7 +612,8 @@ align-items: center;
 }
 
 @media screen and (min-width: 1158px) {
-    .team-cont {
+
+   .team-cont {
             width: 1128px;
         }
     .team-list {
@@ -1005,6 +1006,16 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .modal {
